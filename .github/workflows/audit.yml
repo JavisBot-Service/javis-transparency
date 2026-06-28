@@ -49,5 +49,13 @@ jobs:
             echo "无变化，跳过提交"
           else
             git commit -m "audit: ${{ github.event.inputs.mode || 'audit' }} @ $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
-            git push
+            # 抗并发：若 main 在运行期间前进（并发运行/手动推送），rebase 后重试
+            pushed=0
+            for n in 1 2 3 4 5; do
+              if git push; then pushed=1; break; fi
+              echo "push 被拒（main 已前进），rebase 重试 $n ..."
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+              sleep 3
+            done
+            if [ "$pushed" != "1" ]; then echo "::error::push 重试 5 次仍失败" && exit 1; fi
           fi
