@@ -1,8 +1,10 @@
 # Javis · 模型真偽公開審計 (Public Model-Authenticity Audit)
 
-> 公開頁：**https://javisbot-service.github.io/javis-transparency/**
+> **本仓库是 [javis.bot](https://javis.bot) 中转站的公开模型真伪审计** ｜ 公開頁：**https://javisbot-service.github.io/javis-transparency/**
+>
+> 👉 開通使用主站：**[javis.bot](https://javis.bot)**
 
-本仓库公开 Javis 中转站对在售模型做**模型替换（掉包）审计**的全部内容——代码、运行记录、结果。目的：把"模型真不真"从"相信我"变成**"你自己查、第三方查"**。
+本仓库公开 [javis.bot](https://javis.bot) 中转站对在售模型做**模型替换（掉包）审计**的全部内容——代码、运行记录、结果。目的：把"模型真不真"从"相信我"变成**"你自己查、第三方查"**。
 
 ## 为什么这是可信的
 
