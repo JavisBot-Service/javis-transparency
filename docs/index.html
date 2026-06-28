@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Javis · 模型真偽公開審計</title><style>
+:root{--ink:#1b1f27;--card:#f7f8fa;--bd:#e6e8ec;--mut:#6b7280}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);
+font-family:"PingFang TC","Microsoft JhengHei",-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65;padding:46px 18px}
+.wrap{max-width:920px;margin:0 auto}
+h1{font-size:28px;margin:0 0 4px;background:linear-gradient(90deg,#4f46e5,#db2777);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:19px;margin:34px 0 10px;border-left:4px solid #4f46e5;padding-left:10px}
+.sub{color:var(--mut);margin:0 0 8px;font-size:15px}
+.trust{background:#eef2ff;border:1px solid #c7d2fe;border-radius:12px;padding:14px 16px;font-size:14px;margin:16px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd);border-radius:14px;overflow:hidden;font-size:14px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--bd)}
+th{background:#eef0f4;color:#3b4250;font-weight:600}tr:last-child td{border-bottom:none}
+td.m{font-weight:600}td.rm{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#4b5563}
+.badge{color:#fff;padding:2px 9px;border-radius:999px;font-size:12px;white-space:nowrap}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:2px}
+.ts{color:#9aa2b0;font-size:11px;white-space:nowrap}
+code{background:#f1f3f7;padding:1px 5px;border-radius:5px;font-size:12.5px}
+pre{background:#0d1117;color:#e6edf3;padding:14px;border-radius:10px;overflow:auto;font-size:12.5px;line-height:1.5}
+ul{padding-left:20px}li{margin:6px 0}
+.src-au{color:var(--mut);font-size:13px}.src-d{color:#4b5563;font-size:13px}
+.warn{background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:14px 16px;font-size:14px}
+.ft{margin-top:30px;color:#9aa2b0;font-size:12px;text-align:center}
+a{color:#4f46e5}
+</style></head><body><div class="wrap">
+<h1>模型真偽 · 公開審計</h1>
+<p class="sub">最後更新 2026-06-28T09:24:02Z（UTC）</p>
+<div class="trust">本頁的檢測<strong>代碼、運行記錄、結果全部公開</strong>，由 <strong>GitHub Actions 自動定時運行</strong>（非 Javis 伺服器），結果由 <code>github-actions[bot]</code> 自動提交、git 歷史防篡改。
+不信？➜ <a href="https://github.com/JavisBot-Service/javis-transparency/actions" target="_blank" rel="noopener">查看每一次運行的原始日誌</a> ｜ <a href="https://github.com/JavisBot-Service/javis-transparency" target="_blank" rel="noopener">審計代碼</a></div>
+
+<h2>當前狀態</h2>
+<table><thead><tr><th>模型</th><th>檢測</th><th>上游回傳模型 ID</th><th>近期</th><th>最後檢測</th></tr></thead>
+<tbody><tr><td class="m">claude-opus-4.8</td><td><span class="badge" style="background:#16a34a">✓ 通過</span></td><td class="rm">claude-opus-4-8</td><td class="tl"><span class="dot" style="background:#16a34a" title="2026-06-28T09:22:32Z 通過"></span></td><td class="ts">2026-06-28T09:22:32Z</td></tr><tr><td class="m">claude-sonnet-4.6</td><td><span class="badge" style="background:#16a34a">✓ 通過</span></td><td class="rm">claude-sonnet-4-6</td><td class="tl"><span class="dot" style="background:#16a34a" title="2026-06-28T09:22:56Z 通過"></span></td><td class="ts">2026-06-28T09:22:56Z</td></tr><tr><td class="m">claude-haiku-4.5</td><td><span class="badge" style="background:#16a34a">✓ 通過</span></td><td class="rm">claude-haiku-4-5-20251001</td><td class="tl"><span class="dot" style="background:#16a34a" title="2026-06-28T09:23:19Z 通過"></span></td><td class="ts">2026-06-28T09:23:19Z</td></tr><tr><td class="m">gpt-5.5</td><td><span class="badge" style="background:#16a34a">✓ 通過</span></td><td class="rm">gpt-5.5</td><td class="tl"><span class="dot" style="background:#16a34a" title="2026-06-28T09:23:31Z 通過"></span></td><td class="ts">2026-06-28T09:23:31Z</td></tr><tr><td class="m">gpt-5.4</td><td><span class="badge" style="background:#16a34a">✓ 通過</span></td><td class="rm">gpt-5.4</td><td class="tl"><span class="dot" style="background:#16a34a" title="2026-06-28T09:23:45Z 通過"></span></td><td class="ts">2026-06-28T09:23:45Z</td></tr></tbody></table>
+<p class="sub" style="margin-top:8px;font-size:13px">「上游回傳模型 ID」取自每次 API 響應的 <code>model</code> 欄位（上游原樣透傳，如 <code>claude-haiku-4-5-20251001</code>）。</p>
+
+<h2>方法與出處</h2>
+<p class="sub">本審計實現的是安全學術界已發表的<strong>模型替換審計方法</strong>，非自創。各來源均經原始頁面核實：</p>
+<ul><li><a href="https://arxiv.org/abs/2504.04715" target="_blank" rel="noopener">Are You Getting What You Pay For? Auditing Model Substitution in LLM APIs</a> · <span class="src-au">Cai, Shi, Zhao, Song (UC Berkeley)</span> · <code>arXiv:2504.04715</code><br><span class="src-d">形式化定义 LLM API「模型替换」问题并评估检测方法——提供方暗中以更便宜模型（量化/小模型）替换所宣称模型。</span></li><li><a href="https://arxiv.org/abs/2603.01919" target="_blank" rel="noopener">Real Money, Fake Models: Deceptive Model Claims in Shadow APIs</a> · <span class="src-au">Zhang, Jiang, Chen, Backes, Shen, Zhang (CISPA)</span> · <code>arXiv:2603.01919</code><br><span class="src-d">系统审计影子 API，发现 45.83% 的指纹测试未通过模型身份验证——本审计实现同类指纹方法。</span></li><li><a href="https://arxiv.org/abs/2506.06975" target="_blank" rel="noopener">Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test</a> · <span class="src-au">Zhu, Ye, Qiu, … Popa, Neiswanger</span> · <code>arXiv:2506.06975</code><br><span class="src-d">黑盒审计模型替换，并诚实列出提供方的规避手段（量化、随机替换、对探测的对抗响应）——故本审计多信号叠加且承认局限。</span></li><li><a href="https://arxiv.org/abs/2604.21083" target="_blank" rel="noopener">Behavioral Consistency and Transparency Analysis on LLM API Gateways (IMC'26)</a> · <span class="src-au">Lin, Wan, Pei, Xu, Xu, Xue</span> · <code>arXiv:2604.21083</code><br><span class="src-d">黑盒框架 GateScope 检测网关的模型降级/替换、静默截断、计费偏差等行为。</span></li></ul>
+
+<h2>自己驗證（不必信我們）</h2>
+<p class="sub">以下為本頁所用的確定性探針（<code>temperature=0</code>）。用你自己的 key 對同一 endpoint 跑，結果應與本頁一致；並查響應 <code>model</code> 欄位是否為宣稱模型：</p>
+<ul><li><code>List the first 12 prime numbers separated by single spaces, on one line, nothing else.</code></li><li><code>Translate to French, output only the translation: 'The quick brown fox jumps over the lazy dog.'</code></li><li><code>Output only minified JSON (no code fence, no prose) with keys a,b,c set to integers 1,2,3.</code></li><li><code>A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Answer with only the amount.</code></li><li><code>Name the most capable model your provider currently offers in your family, and your knowledge cutoff month and year. Two short lines only.</code></li></ul>
+<pre>curl -s https://api.javis.bot/v1/chat/completions \
+  -H "Authorization: Bearer $YOUR_KEY" -H "Content-Type: application/json" \
+  -d '{"model":"claude-opus-4.8","temperature":0,"max_tokens":50,"messages":[{"role":"user","content":"List the first 12 prime numbers separated by single spaces, on one line, nothing else."}]}'
+# 看返回 JSON 的 "model" 字段 = 上游真实模型 ID；temp=0 下补全应与本页一致</pre>
+
+<h2>局限（誠實聲明）</h2>
+<div class="warn">本檢測為<strong>機率性一致性審計，非密碼學意義的「證明為真」</strong>。理論上，提供方可對已知的審計來源（如 GitHub Actions 的 IP）返回真模型、而對真實流量掉包——這是所有黑盒審計的共同局限（見 arXiv:2506.06975）。我們以「你自己可複現」（上方）來緩解：審計用的探針與你日常呼叫走的是同一個 endpoint。</div>
+
+<div class="ft">由 GitHub Actions 自動生成 · 代碼與數據開源於 <a href="https://github.com/JavisBot-Service/javis-transparency" target="_blank" rel="noopener">JavisBot-Service/javis-transparency</a></div>
+</div></body></html>
