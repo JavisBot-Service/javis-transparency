@@ -1,0 +1,18 @@
+{
+  "model": "claude-sonnet-4.6",
+  "ts": "2026-06-28T09:19:26Z",
+  "completions": {
+    "deterministic_list": "2 3 5 7 11 13 17 19 23 29 31 37",
+    "deterministic_translate": "Le rapide renard brun saute par-dessus le chien paresseux.",
+    "format_json": "{\"a\":1,\"b\":2,\"c\":3}",
+    "reasoning_signature": "$0.05",
+    "knowledge_probe": ""
+  },
+  "self_id": "I'm Claude, an AI assistant created by Anthropic.",
+  "response_model": "claude-sonnet-4-6",
+  "token": {
+    "prompt_tokens": 30
+  },
+  "errors": [],
+  "captured_at": "2026-06-28T09:19:43Z"
+}
