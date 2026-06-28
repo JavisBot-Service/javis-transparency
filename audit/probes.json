@@ -1,0 +1,22 @@
+{
+  "_comment": "公开指纹探针集。completions 为确定性问题（temp=0）。family_markers 为家族矛盾扫描。token_probe 用于 tokenizer 计数指纹（仅 token_signal=true 的模型）。",
+  "self_id": {
+    "id": "self_id",
+    "messages": [{ "role": "user", "content": "In one short sentence, state which AI model you are and which company created you. Do not add anything else." }]
+  },
+  "token_probe": {
+    "id": "token_probe",
+    "messages": [{ "role": "user", "content": "Reply with exactly the single word: OK" }]
+  },
+  "completions": [
+    { "id": "deterministic_list", "messages": [{ "role": "user", "content": "List the first 12 prime numbers separated by single spaces, on one line, nothing else." }] },
+    { "id": "deterministic_translate", "messages": [{ "role": "user", "content": "Translate to French, output only the translation: 'The quick brown fox jumps over the lazy dog.'" }] },
+    { "id": "format_json", "messages": [{ "role": "user", "content": "Output only minified JSON (no code fence, no prose) with keys a,b,c set to integers 1,2,3." }] },
+    { "id": "reasoning_signature", "messages": [{ "role": "user", "content": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Answer with only the amount." }] },
+    { "id": "knowledge_probe", "messages": [{ "role": "user", "content": "Name the most capable model your provider currently offers in your family, and your knowledge cutoff month and year. Two short lines only." }] }
+  ],
+  "family_markers": {
+    "claude": ["i am chatgpt", "i'm chatgpt", "i am gpt", "created by openai", "made by openai", "i am a glm", "chatglm", "智谱", "i am qwen", "通义千问", "deepseek", "i am gemini", "google deepmind", "trained by google"],
+    "gpt": ["i am claude", "i'm claude", "made by anthropic", "created by anthropic", "chatglm", "智谱", "i am qwen", "通义千问", "deepseek", "i am gemini", "trained by google"]
+  }
+}

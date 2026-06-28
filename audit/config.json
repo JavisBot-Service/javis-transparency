@@ -1,0 +1,17 @@
+{
+  "_comment": "公开审计配置。探测 Key 经 GitHub Secrets 注入环境变量 JAVIS_PROBE_KEY，不在此文件、不入日志。",
+  "api_base": "https://api.javis.bot",
+  "probe_key_env": "JAVIS_PROBE_KEY",
+  "repo_slug": "JavisBot-Service/javis-transparency",
+  "request": { "temperature": 0, "max_tokens": 200, "timeout_seconds": 60, "retries": 2 },
+  "history": { "retention_per_model": 200 },
+  "thresholds": { "completion_pass": 0.82, "completion_fail": 0.55, "token_rel_tolerance": 0.15 },
+  "page": { "timeline_points": 12 },
+  "models": [
+    { "name": "claude-opus-4.8",   "family": "claude", "token_signal": true,  "enabled": true },
+    { "name": "claude-sonnet-4.6", "family": "claude", "token_signal": true,  "enabled": true },
+    { "name": "claude-haiku-4.5",  "family": "claude", "token_signal": true,  "enabled": true },
+    { "name": "gpt-5.5",           "family": "gpt",    "token_signal": false, "enabled": true },
+    { "name": "gpt-5.4",           "family": "gpt",    "token_signal": false, "enabled": true }
+  ]
+}
