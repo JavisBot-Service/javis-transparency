@@ -1,4 +1,3 @@
-<!-- DRAFT for JavisBot-Service/javis-transparency — English-first README. Drop in as README.md (move current Chinese to README.zh.md). -->
 # Javis Transparency — Third-Party-Verifiable Model-Authenticity Audit
 
 [![Audit](https://github.com/JavisBot-Service/javis-transparency/actions/workflows/audit.yml/badge.svg)](https://github.com/JavisBot-Service/javis-transparency/actions/workflows/audit.yml)
