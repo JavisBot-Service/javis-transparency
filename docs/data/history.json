@@ -116,6 +116,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-02T23:46:19Z",
+      "verdict": "pass",
+      "score": 0.899,
+      "response_model": "claude-opus-4-8",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
@@ -229,6 +238,15 @@
     },
     {
       "ts": "2026-07-02T19:02:26Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-sonnet-4-6",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-02T23:46:37Z",
       "verdict": "pass",
       "score": 1.0,
       "response_model": "claude-sonnet-4-6",
@@ -354,6 +372,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-02T23:46:53Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-haiku-4-5-20251001",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "gpt-5.5": [
@@ -473,6 +500,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-02T23:47:04Z",
+      "verdict": "pass",
+      "score": 0.897,
+      "response_model": "gpt-5.5",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "gpt-5.4": [
@@ -588,6 +624,15 @@
       "ts": "2026-07-02T19:03:41Z",
       "verdict": "pass",
       "score": 0.849,
+      "response_model": "gpt-5.4",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-02T23:47:23Z",
+      "verdict": "pass",
+      "score": 0.861,
       "response_model": "gpt-5.4",
       "signals": [
         "各信号与基线一致"
