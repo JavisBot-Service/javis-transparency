@@ -206,6 +206,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-06T14:42:12Z",
+      "verdict": "pass",
+      "score": 0.976,
+      "response_model": "claude-opus-4-8",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
@@ -409,6 +418,15 @@
     },
     {
       "ts": "2026-07-05T23:46:56Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-sonnet-4-6",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-06T14:42:43Z",
       "verdict": "pass",
       "score": 1.0,
       "response_model": "claude-sonnet-4-6",
@@ -624,6 +642,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-06T14:43:02Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-haiku-4-5-20251001",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "gpt-5.5": [
@@ -833,6 +860,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-06T14:43:15Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}; deterministic_list: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}"
+      ]
     }
   ],
   "gpt-5.4": [
@@ -1041,6 +1077,15 @@
       "response_model": "gpt-5.4",
       "signals": [
         "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-06T14:44:33Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}; deterministic_list: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}"
       ]
     }
   ]
