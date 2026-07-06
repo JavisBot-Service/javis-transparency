@@ -215,6 +215,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-06T23:47:45Z",
+      "verdict": "pass",
+      "score": 0.904,
+      "response_model": "claude-opus-4-8",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
@@ -427,6 +436,15 @@
     },
     {
       "ts": "2026-07-06T14:42:43Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-sonnet-4-6",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-06T23:48:06Z",
       "verdict": "pass",
       "score": 1.0,
       "response_model": "claude-sonnet-4-6",
@@ -651,6 +669,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-06T23:48:26Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-haiku-4-5-20251001",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "gpt-5.5": [
@@ -869,6 +896,15 @@
       "signals": [
         "探测失败: self_id: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}; deterministic_list: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}"
       ]
+    },
+    {
+      "ts": "2026-07-06T23:48:38Z",
+      "verdict": "warn",
+      "score": 0.554,
+      "response_model": "gpt-5.5",
+      "signals": [
+        "补全轻微偏移: 相似度 0.55"
+      ]
     }
   ],
   "gpt-5.4": [
@@ -1086,6 +1122,15 @@
       "response_model": null,
       "signals": [
         "探测失败: self_id: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}; deterministic_list: HTTP 400 {\"error\":{\"message\":\"Unsupported parameter: max_output_tokens\",\"type\":\"invalid_request_error\",\"param\":\"\",\"code\":null}}"
+      ]
+    },
+    {
+      "ts": "2026-07-06T23:49:46Z",
+      "verdict": "pass",
+      "score": 0.861,
+      "response_model": "gpt-5.4",
+      "signals": [
+        "各信号与基线一致"
       ]
     }
   ]
