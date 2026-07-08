@@ -325,6 +325,8 @@ a{{color:#4f46e5}}
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capture-baseline", action="store_true")
+    ap.add_argument("--only", default="",
+                    help="仅对这些模型采基线（逗号分隔）。用于新模型上架补基线，不重写既有基线。仅 --capture-baseline 生效。")
     ap.add_argument("--config", default=os.path.join(HERE, "config.json"))
     ap.add_argument("--probes", default=os.path.join(HERE, "probes.json"))
     args = ap.parse_args()
@@ -337,7 +339,15 @@ def main():
         sys.exit(2)
 
     if args.capture_baseline:
-        for mc in cfg["models"]:
+        targets = cfg["models"]
+        if args.only:
+            names = {s.strip() for s in args.only.split(",") if s.strip()}
+            targets = [m for m in targets if m["name"] in names]
+            unknown = names - {m["name"] for m in targets}
+            if unknown or not targets:
+                log("--only 含未知模型或为空: %s" % (sorted(unknown) or args.only))
+                sys.exit(2)
+        for mc in targets:
             if not mc.get("enabled", True):
                 continue
             ev = gather(cfg, probes, key, mc)

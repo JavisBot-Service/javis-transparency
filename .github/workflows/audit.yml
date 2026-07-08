@@ -12,6 +12,10 @@ on:
         type: choice
         default: audit
         options: [audit, capture-baseline]
+      only:
+        description: "仅采这些模型的基线（逗号分隔，留空=全量；仅 capture-baseline 生效）"
+        type: string
+        default: ""
 
 permissions:
   contents: write   # 仅需写仓库以提交结果，最小权限
@@ -33,9 +37,14 @@ jobs:
       - name: Run audit
         env:
           JAVIS_PROBE_KEY: ${{ secrets.JAVIS_PROBE_KEY }}   # 注入环境变量，绝不在日志打印
+          ONLY: ${{ github.event.inputs.only }}
         run: |
           if [ "${{ github.event.inputs.mode }}" = "capture-baseline" ]; then
-            python3 audit/probe_public.py --capture-baseline
+            if [ -n "$ONLY" ]; then
+              python3 audit/probe_public.py --capture-baseline --only "$ONLY"
+            else
+              python3 audit/probe_public.py --capture-baseline
+            fi
           else
             python3 audit/probe_public.py
           fi
