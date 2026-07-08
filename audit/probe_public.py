@@ -114,8 +114,10 @@ def gather(cfg, probes, key, mc):
     rq = cfg["request"]
 
     def c(msgs):
+        # 模型级 max_tokens 覆盖：带内部推理的模型（thinking 计入 max_tokens 预算）需更大预算，
+        # 否则可见回答被截断且截断点随思考长度漂移 → 相似度对基线抖动、误报 warn。
         return call_model(cfg["api_base"], key, mc["name"], msgs, rq["temperature"],
-                          rq["max_tokens"], rq["timeout_seconds"], rq["retries"])
+                          mc.get("max_tokens", rq["max_tokens"]), rq["timeout_seconds"], rq["retries"])
     ev = {"model": mc["name"], "ts": now_iso(), "completions": {}, "self_id": "",
           "response_model": None, "token": {}, "errors": []}
     r = c(probes["self_id"]["messages"])

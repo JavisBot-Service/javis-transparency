@@ -13,7 +13,7 @@
     { "name": "claude-haiku-4.5",  "family": "claude", "token_signal": true,  "enabled": true },
     { "name": "gpt-5.5",           "family": "gpt",    "token_signal": false, "enabled": true },
     { "name": "gpt-5.4",           "family": "gpt",    "token_signal": false, "enabled": true },
-    { "name": "claude-fable-5",    "family": "claude", "token_signal": true,  "enabled": true },
+    { "name": "claude-fable-5",    "family": "claude", "token_signal": true,  "enabled": true, "max_tokens": 1024 },
     { "name": "claude-sonnet-5",   "family": "claude", "token_signal": true,  "enabled": true }
   ]
 }
