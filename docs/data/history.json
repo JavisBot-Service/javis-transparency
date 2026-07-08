@@ -287,6 +287,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-08T23:55:14Z",
+      "verdict": "warn",
+      "score": 0.808,
+      "response_model": "claude-opus-4-8",
+      "signals": [
+        "补全轻微偏移: 相似度 0.81"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
@@ -571,6 +580,15 @@
     },
     {
       "ts": "2026-07-08T18:56:34Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-sonnet-4-6",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-08T23:55:32Z",
       "verdict": "pass",
       "score": 1.0,
       "response_model": "claude-sonnet-4-6",
@@ -867,6 +885,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-08T23:55:49Z",
+      "verdict": "pass",
+      "score": 0.978,
+      "response_model": "claude-haiku-4-5-20251001",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "gpt-5.5": [
@@ -1153,6 +1180,15 @@
       "ts": "2026-07-08T18:57:05Z",
       "verdict": "pass",
       "score": 0.911,
+      "response_model": "gpt-5.5",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-08T23:56:02Z",
+      "verdict": "pass",
+      "score": 0.924,
       "response_model": "gpt-5.5",
       "signals": [
         "各信号与基线一致"
@@ -1447,6 +1483,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-08T23:56:25Z",
+      "verdict": "pass",
+      "score": 0.937,
+      "response_model": "gpt-5.4",
+      "signals": [
+        "各信号与基线一致"
+      ]
     }
   ],
   "claude-fable-5": [
@@ -1488,6 +1533,15 @@
     },
     {
       "ts": "2026-07-08T18:57:56Z",
+      "verdict": "warn",
+      "score": 0.0,
+      "response_model": "claude-fable-5",
+      "signals": [
+        "补全大幅偏移: 相似度 0.00"
+      ]
+    },
+    {
+      "ts": "2026-07-08T23:56:41Z",
       "verdict": "warn",
       "score": 0.0,
       "response_model": "claude-fable-5",
@@ -1537,6 +1591,15 @@
       "ts": "2026-07-08T18:58:29Z",
       "verdict": "pass",
       "score": 0.874,
+      "response_model": "claude-sonnet-5",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-08T23:57:13Z",
+      "verdict": "pass",
+      "score": 0.89,
       "response_model": "claude-sonnet-5",
       "signals": [
         "各信号与基线一致"
