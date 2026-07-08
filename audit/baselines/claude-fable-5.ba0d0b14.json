@@ -1,18 +1,18 @@
 {
   "model": "claude-fable-5",
-  "ts": "2026-07-08T02:49:08Z",
+  "ts": "2026-07-08T02:55:21Z",
   "completions": {
     "deterministic_list": "2 3 5 7 11 13 17 19 23 29 31 37",
-    "deterministic_translate": "Le rapide renard brun saute par-dessus le chien paresseux.",
+    "deterministic_translate": "Le renard brun rapide saute par-dessus le chien paresseux.",
     "format_json": "{\"a\":1,\"b\":2,\"c\":3}",
     "reasoning_signature": "$0.05",
-    "knowledge_probe": "Most capable model: Claude Opus 4 (per my training data; newer may exist).\nKnowledge cutoff: March 2"
+    "knowledge_probe": "Most capable model: Claude Opus 4 (as of my knowledge; newer versions may exist).\nKnowledge cutoff: January 2025."
   },
-  "self_id": "I am Claude, an AI model created by Anthropic.",
+  "self_id": "I am Claude Code, an AI model created by Anthropic.",
   "response_model": "claude-fable-5",
   "token": {
     "prompt_tokens": 43
   },
   "errors": [],
-  "captured_at": "2026-07-08T02:49:47Z"
+  "captured_at": "2026-07-08T02:55:54Z"
 }
