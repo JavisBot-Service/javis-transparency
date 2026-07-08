@@ -324,6 +324,14 @@ a{{color:#4f46e5}}
     log("已渲染透明页 -> " + PAGE_PATH)
 
 
+def select_models(models, only):
+    """按逗号分隔的 only 串过滤模型列表（保持 config 顺序）。返回 (选中列表, 未知名字排序列表)。"""
+    names = {s.strip() for s in only.split(",") if s.strip()}
+    sel = [m for m in models if m["name"] in names]
+    unknown = sorted(names - {m["name"] for m in sel})
+    return sel, unknown
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capture-baseline", action="store_true")
@@ -343,11 +351,9 @@ def main():
     if args.capture_baseline:
         targets = cfg["models"]
         if args.only:
-            names = {s.strip() for s in args.only.split(",") if s.strip()}
-            targets = [m for m in targets if m["name"] in names]
-            unknown = names - {m["name"] for m in targets}
+            targets, unknown = select_models(targets, args.only)
             if unknown or not targets:
-                log("--only 含未知模型或为空: %s" % (sorted(unknown) or args.only))
+                log("--only 含未知模型或为空: %s" % (unknown or args.only))
                 sys.exit(2)
         for mc in targets:
             if not mc.get("enabled", True):
