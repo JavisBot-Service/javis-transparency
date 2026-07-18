@@ -548,6 +548,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-18T17:39:00Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000546, need quota: ＄0.001050 (request id: 202607181739076377865038268d9d6xDuiBfut)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000546, need quota: ＄0.001050 (request id: 202607181739189374464278268d9d6JD71fYAI)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
@@ -1099,6 +1108,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-18T17:40:18Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000546, need quota: ＄0.000630 (request id: 202607181740249564238418268d9d6jUHDRb15)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000546, need quota: ＄0.000630 (request id: 202607181740356460515748268d9d6ULq7lvBm)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+      ]
     }
   ],
   "claude-haiku-4.5": [
@@ -1644,6 +1662,15 @@
     },
     {
       "ts": "2026-07-18T08:28:13Z",
+      "verdict": "pass",
+      "score": 1.0,
+      "response_model": "claude-haiku-4-5-20251001",
+      "signals": [
+        "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-18T17:41:35Z",
       "verdict": "pass",
       "score": 1.0,
       "response_model": "claude-haiku-4-5-20251001",
@@ -2201,6 +2228,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-18T17:41:48Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000924 (request id: 202607181741551109713938268d9d6G2MfYvOJ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000920 (request id: 202607181742057961216208268d9d63xuiKg8u)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+      ]
     }
   ],
   "gpt-5.4": [
@@ -2752,6 +2788,15 @@
       "signals": [
         "各信号与基线一致"
       ]
+    },
+    {
+      "ts": "2026-07-18T17:42:53Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000462 (request id: 202607181742595193742338268d9d61D6IGg3m)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000460 (request id: 202607181743102041877808268d9d61MnQWVTo)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+      ]
     }
   ],
   "claude-fable-5": [
@@ -3060,6 +3105,15 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.001038, need quota: ＄0.004572 (request id: 202607180829155732577778268d9d6TOws3kHU)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.001038, need quota: ＄0.004572 (request id: 202607180829258671914328268d9d6i4RyiKn0)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
       ]
+    },
+    {
+      "ts": "2026-07-18T17:43:57Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.004572 (request id: 202607181744036905449698268d9d6SWXB1vkq)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.004572 (request id: 202607181744143888775678268d9d6rEIyPhOJ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+      ]
     }
   ],
   "claude-sonnet-5": [
@@ -3367,6 +3421,15 @@
       "response_model": "claude-sonnet-5",
       "signals": [
         "各信号与基线一致"
+      ]
+    },
+    {
+      "ts": "2026-07-18T17:45:13Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000630 (request id: 202607181745203053412778268d9d6t6GMQb4a)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000254, need quota: ＄0.000630 (request id: 202607181745314388971248268d9d64N5fV1uN)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
       ]
     }
   ]
