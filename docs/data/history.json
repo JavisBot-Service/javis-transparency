@@ -1,15 +1,6 @@
 {
   "claude-opus-4.8": [
     {
-      "ts": "2026-07-12T09:30:02Z",
-      "verdict": "pass",
-      "score": 0.831,
-      "response_model": "claude-opus-4-8",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
-    {
       "ts": "2026-07-12T17:42:01Z",
       "verdict": "pass",
       "score": 0.976,
@@ -1799,18 +1790,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061206351241405858268d9d61GaW3rui)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061206459994109608268d9d6mzslygg1)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T16:57:38Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061657448152363578268d9d6Uj8be747)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061657560751727808268d9d6NbwlTUoD)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "claude-sonnet-4.6": [
-    {
-      "ts": "2026-07-12T09:30:22Z",
-      "verdict": "pass",
-      "score": 1.0,
-      "response_model": "claude-sonnet-4-6",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
     {
       "ts": "2026-07-12T17:42:23Z",
       "verdict": "warn",
@@ -3601,18 +3592,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061207496261053708268d9d6NkioFTLu)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061207599792287688268d9d6wtXyg6Mk)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T16:58:54Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061659004699107218268d9d6BmkvEFNP)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061659111054207748268d9d6SNumcZBn)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "claude-haiku-4.5": [
-    {
-      "ts": "2026-07-12T09:30:40Z",
-      "verdict": "pass",
-      "score": 0.978,
-      "response_model": "claude-haiku-4-5-20251001",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
     {
       "ts": "2026-07-12T17:42:36Z",
       "verdict": "pass",
@@ -5403,18 +5394,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061209020393114358268d9d6ZaeCl2M9)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061209123813177358268d9d61YnVRnV4)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T17:00:08Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061700144957999058268d9d6ZmRGktkt)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061700248422842498268d9d6NtlFYIuv)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "gpt-5.5": [
-    {
-      "ts": "2026-07-12T09:30:53Z",
-      "verdict": "pass",
-      "score": 0.891,
-      "response_model": "gpt-5.5",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
     {
       "ts": "2026-07-12T17:42:53Z",
       "verdict": "pass",
@@ -7205,18 +7196,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061210144424488338268d9d6EXWMLtQz)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061210248114767498268d9d6SCClBxfl)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T17:01:21Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061701271942754058268d9d6HjZ3GsJt)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061701375333625378268d9d6GJbSCmA2)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "gpt-5.4": [
-    {
-      "ts": "2026-07-12T09:31:10Z",
-      "verdict": "pass",
-      "score": 0.849,
-      "response_model": "gpt-5.4",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
     {
       "ts": "2026-07-12T17:43:10Z",
       "verdict": "pass",
@@ -9007,18 +8998,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061211165746767968268d9d63fZ4dr8m)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061211269347286448268d9d6kBZrB5EY)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T17:02:23Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061702294116353448268d9d6hSCBqkGQ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061702402384192428268d9d68NDLOUWU)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "claude-fable-5": [
-    {
-      "ts": "2026-07-12T09:31:26Z",
-      "verdict": "warn",
-      "score": 0.0,
-      "response_model": "claude-fable-5",
-      "signals": [
-        "补全大幅偏移: 相似度 0.00"
-      ]
-    },
     {
       "ts": "2026-07-12T17:43:22Z",
       "verdict": "warn",
@@ -10809,18 +10800,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061212186779754068268d9d6kDilOYk3)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061212290175144968268d9d6lseoROmT)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
+    },
+    {
+      "ts": "2026-09-06T17:03:27Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061703340121528738268d9d66t775Yr3)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061703443507076638268d9d68uuITofw)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
     }
   ],
   "claude-sonnet-5": [
-    {
-      "ts": "2026-07-12T09:31:56Z",
-      "verdict": "pass",
-      "score": 0.854,
-      "response_model": "claude-sonnet-5",
-      "signals": [
-        "各信号与基线一致"
-      ]
-    },
     {
       "ts": "2026-07-12T17:43:57Z",
       "verdict": "pass",
@@ -12610,6 +12601,15 @@
       "response_model": null,
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061213310521134288268d9d6JPJtkJIU)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061213413921132388268d9d6tIlxbR7G)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
+    },
+    {
+      "ts": "2026-09-06T17:04:40Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061704466191898988268d9d6xr10rVZj)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609061704571611098688268d9d6wVh2o4AU)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
     }
   ]
