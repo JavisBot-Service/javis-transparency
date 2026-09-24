@@ -1,15 +1,6 @@
 {
   "claude-opus-4.8": [
     {
-      "ts": "2026-08-02T10:05:42Z",
-      "verdict": "error",
-      "score": 0.0,
-      "response_model": null,
-      "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.001050 (request id: 202608021005490298271828268d9d6HkuHlsgY)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.001050 (request id: 202608021005598867754928268d9d62lTXGPAB)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
-      ]
-    },
-    {
       "ts": "2026-08-02T15:13:37Z",
       "verdict": "error",
       "score": 0.0,
@@ -1799,18 +1790,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232255308784779888268d9d6U99QHkj4)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232255419333254908268d9d6a8A9PhXq)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "claude-sonnet-4.6": [
+    },
     {
-      "ts": "2026-08-02T10:06:59Z",
+      "ts": "2026-09-24T07:32:51Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000630 (request id: 202608021007062782357208268d9d66DaQbfVv)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000630 (request id: 202608021007171667361658268d9d6xIqRbH5K)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "claude-sonnet-4.6": [
     {
       "ts": "2026-08-02T15:14:52Z",
       "verdict": "error",
@@ -3601,18 +3592,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232256475369434458268d9d6OzZJQ3pJ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232256584052012138268d9d6rOGR9Hks)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "claude-haiku-4.5": [
+    },
     {
-      "ts": "2026-08-02T10:08:16Z",
+      "ts": "2026-09-24T07:34:03Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000210 (request id: 202608021008224689204098268d9d6I5E8Lqoc)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000210 (request id: 202608021008333017520468268d9d6f7HlkJMR)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "claude-haiku-4.5": [
     {
       "ts": "2026-08-02T15:16:06Z",
       "verdict": "error",
@@ -5403,18 +5394,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232258046103554288268d9d6xumzFsqm)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232258156483915318268d9d66nC4EaaU)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "gpt-5.5": [
+    },
     {
-      "ts": "2026-08-02T10:09:32Z",
+      "ts": "2026-09-24T07:35:13Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.001046 (request id: 202608021009388865228658268d9d6fC7fURD2)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.001042 (request id: 202608021009501296884468268d9d6QzqLZXnu)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "gpt-5.5": [
     {
       "ts": "2026-08-02T15:17:18Z",
       "verdict": "error",
@@ -7205,18 +7196,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232259216097242578268d9d6TdmNT4bQ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232259324422391728268d9d6hictZGRK)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "gpt-5.4": [
+    },
     {
-      "ts": "2026-08-02T10:10:38Z",
+      "ts": "2026-09-24T07:36:25Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000524 (request id: 202608021010447987605798268d9d6ZsKyAVkc)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000522 (request id: 202608021010558854845628268d9d6elkr8uNQ)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "gpt-5.4": [
     {
       "ts": "2026-08-02T15:18:20Z",
       "verdict": "error",
@@ -9007,18 +8998,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232300269803173018268d9d6QcLuH7wK)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232300382232091398268d9d6bSigbtjH)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "claude-fable-5": [
+    },
     {
-      "ts": "2026-08-02T10:11:44Z",
+      "ts": "2026-09-24T07:37:25Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.005486 (request id: 202608021011510263595888268d9d6MCeh0Exh)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.005486 (request id: 202608021012020834272638268d9d68caiZpzr)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "claude-fable-5": [
     {
       "ts": "2026-08-02T15:19:25Z",
       "verdict": "error",
@@ -10809,18 +10800,18 @@
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232301331233812238268d9d6IIISk628)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232301439687437978268d9d6hpmNt8mc)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
       ]
-    }
-  ],
-  "claude-sonnet-5": [
+    },
     {
-      "ts": "2026-08-02T10:13:01Z",
+      "ts": "2026-09-24T07:38:25Z",
       "verdict": "error",
       "score": 0.0,
       "response_model": null,
       "signals": [
-        "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000630 (request id: 202608021013073560430818268d9d6hyQ7E63J)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr; deterministic_list: HTTP 403 {\"error\":{\"message\":\"token quota is not enough, token remain quota: ＄0.000162, need quota: ＄0.000630 (request id: 202608021013182030267558268d9d68Ym1Xdgl)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"pr"
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
-    },
+    }
+  ],
+  "claude-sonnet-5": [
     {
       "ts": "2026-08-02T15:20:37Z",
       "verdict": "error",
@@ -12610,6 +12601,15 @@
       "response_model": null,
       "signals": [
         "探测失败: self_id: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232302497789792978268d9d6vZQW4W4Y)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}; deterministic_list: HTTP 403 {\"error\":{\"message\":\"用户额度不足, 剩余额度: ＄-0.000062 (request id: 202609232303006243673858268d9d6MQifuKTx)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"insufficient_user_quota\"}}"
+      ]
+    },
+    {
+      "ts": "2026-09-24T07:39:35Z",
+      "verdict": "error",
+      "score": 0.0,
+      "response_model": null,
+      "signals": [
+        "探测失败: self_id: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>; deterministic_list: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>"
       ]
     }
   ]
